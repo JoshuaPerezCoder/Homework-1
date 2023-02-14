@@ -1,21 +1,22 @@
-#Joshua Perez PSID: 1837170
-#Asking user for current date
+# Joshua Perez PSID: 1837170
+# Asking user for current date
 cur_month = int(input("What is today's month?:"))
 cur_day = int(input("What is today's day?:"))
 cur_year = int(input("What is today's year?:"))
 
-#Asking user for their birthday
-bday_month = int(input("What is your birthday month?:"))
-bday_day = int(input("What is your birthday day?:"))
-bday_year = int(input("What is your birthday year?:"))
+# Asking user for their birthday
+birthday_month = int(input("What is your birthday month?:"))
+birthday_day = int(input("What is your birthday day?:"))
+birthday_year = int(input("What is your birthday year?:"))
 
 
-#comparing dates
-if cur_month == bday_month and cur_day == bday_day:
+# comparing dates
+if cur_month == birthday_month and cur_day == birthday_day:
     print("Happy Birthday!!!")
-elif cur_month == bday_month and cur_day < bday_day:
-     print(f"You are currently {cur_year-bday_year-1} years old.")
-elif cur_month < bday_month:
-    print(f"You are currently {cur_year-bday_year-1} years old.")
+elif cur_month == birthday_month and cur_day < birthday_day:
+    print(f"You are currently {cur_year-birthday_year-1} years old.")
+elif cur_month < birthday_month:
+    print(f"You are currently {cur_year-birthday_year-1} years old.")
 else:
-    print(f"You are currently {cur_year-bday_year} years old.")
+    print(f"You are currently {cur_year-birthday_year} years old.\n")
+    
